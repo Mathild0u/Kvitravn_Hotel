@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVITRAVN Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85afe00ea8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+
+    <header>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="#">
+            <img src="img/kvitravn-logo-horizontal.svg" alt="KVITRAVN Hotel">
+          </a>
+        </div>
+        <ul class="menu">
+            <li><a class="menuItem" href="#">L'hôtel</a></li>
+            <li><a class="menuItem" href="#">Nos chambres</a></li>
+            <li><a class="menuItem" href="#">Le restaurant</a></li>
+            <li><a class="menuItem" href="#">Se balader</a></li>
+            <li><button><a class="menuItem" href="#">Réserver</a></button></li>
+        </ul>
+        <div class="container" id="burger" onclick="myFunction()" >
+            <div class="bar1" id="A"></div>
+            <div class="bar2" id="B"></div>
+            <div class="bar3" id="C"></div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-content">
+          <img src="img/kvitravn-logo-vertical.png" alt="KVITRAVN Hotel">
+          <h1>Le calme, en pleine nature</h1>
+        </div>
+        <a class="scroll-down">
+          <img src="img/fleche-bas.png">
+        </a>
+      </div>
+      
+    </header>
+
+
+    <div class="slide_wrapper">
+      <h2>Les chambres</h2>
+    <section class="splide">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="img_box">
+                        <img src="img/junior.png">
+                    </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="img_box">
+                            <img src="img/familiale.png">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="img_box">
+                            <img src="img/double.png">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="img_box">
+                            <img src="img/simple.png">
+                        </div>
+                    </li>
+              </ul>
+              
+        </div>
+      </section>
+    </div>
+
+    
+    <div class="restaurant">
+      <div class="restaurant-image">
+      </div>
+      <div class="restaurant-content">
+          <div class="text">
+              <h2 class="title">Un restaurant 2 étoiles</h2>
+              <span class="line"></span>
+              <p class="infos">Proin lectus sapien, commodo ut felis nec, fermentum imperdiet elit. Nulla gravida condimentum erat, ac rhoncus nunc imperdiet id. Aliquam eu porttitor arcu, a blandit velit. In convallis nulla vitae facilisis scelerisque. Sed viverra justo id faucibus pellentesque. Ut non vehicula ex.
+                  <br><br>
+                  Vivamus bibendum quam ex, eu pellentesque arcu semper a. Integer sed varius enim. Duis venenatis vitae mauris nec faucibus. Proin egestas vitae lorem id placerat. Ut in eros nec massa rhoncus pharetra. Ut sed gravida sem. Ut at eros arcu. Aenean id pharetra nulla. Nam sit amet elit ante.
+              </p>
+              <button class="discover">Découvrir</button>
+          </div>
+      </div>
+  </div>
+
+  <div class="hotel">
+      <div class="hotel-image">
+      </div>
+      <div class="hotel-content">
+          <div class="text">
+              <h2 class="title">Notre hôtel</h2>
+              <span class="line"></span>
+              <p class="infos">
+                  Proin lectus sapien, commodo ut felis nec, fermentum imperdiet elit. Nulla gravida condimentum erat, ac rhoncus nunc imperdiet id. Aliquam eu porttitor arcu, a blandit velit.
+              </p>
+              <p class="infos">
+                  Vivamus bibendum quam ex, eu pellentesque arcu semper a. Integer sed varius enim. Duis venenatis vitae mauris nec faucibus. Proin egestas vitae lorem id placerat. Ut in eros nec massa rhoncus pharetra. Ut sed gravida sem.
+              </p>
+              <button class="discover">Découvrir l'hôtel</button>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="balade">
+      <div class="balade-image">
+      </div>
+      <div class="balade-content">
+          <div class="text">
+              <h2 class="title">Se balader en forêt <br> et ailleurs</h2>
+              <span class="line"></span>
+              <p class="infos">
+                  Proin lectus sapien, commodo ut felis nec, fermentum imperdiet elit. Nulla gravida condimentum erat, ac rhoncus nunc imperdiet id. Aliquam eu porttitor arcu, a blandit velit.
+                  <br><br>
+                  Vivamus bibendum quam ex, eu pellentesque arcu semper a. Integer sed varius enim. Duis venenatis vitae mauris nec faucibus. Proin egestas vitae lorem id placerat. Ut in eros nec massa rhoncus pharetra. Ut sed gravida sem. 
+              </p>
+              <button class="discover">Découvrir les balades</button>
+          </div>
+      </div>
+  </div>
+
+  <footer>
+    <div class="footer-section">
+        <div class="footer-section-left">
+            <img src="img/kvitravn-logo-horizontal.svg">
+            <p>03 12 34 56 78</p>
+            <p>contact@kvitravn-hotel.com</p>
+            <ul class="footer-icon">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter" ></i></li>
+                <li><i class="fa-brands fa-instagram" ></i></li>
+            </ul>
+        </div>
+        <div class="footer-section-right">
+            <ul class="footer-menu">
+                <li><a href="">L'hôtel</a></li>
+                <li><a href="">Nos chambres</a></li>
+                <li><a href="">Le restaurant</a></li>
+                <li><a href="">Se balader</a></li>
+                <li><a href="">Réserver</a></li>
+            </ul>
+            <p>mentions légales</p>
+        </div>
+    </div>
+  </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script type="text/javascript">
+        
+      var splide = new Splide( '.splide', {
+      pagination: false,
+      padding: { left: '1rem', right: '2rem' },
+      width: '100%',
+      gap: '1rem',
+      perPage: 2,
+      perMove: 1,
+      focus    : 'center',
+      speed: 450,
+      } );
+      
+      splide.mount();
+  
+      </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

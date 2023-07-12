@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+/* Réinitialisation de la marge et du rembourrage du corps de la page, désactivation du défilement horizontal */
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Style pour le bloc de la page "hero" qui contient le titre principal et l'image d'arrière-plan */
+.hero {
+    background-image: url(img/Hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style pour le contenu du bloc hero qui contient le titre et le logo de l'hôtel */
+.hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Réinitialisation de la marge du titre principal */
+.hero-content h1 {
+    margin: 0;
+    color: #F6F6F5;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    line-height: 120%;
+}
+
+/* Style pour la barre de navigation qui contient le logo de l'hôtel et les liens de menu */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+/* Style pour le logo de l'hôtel dans la barre de navigation */
+.navbar-brand{
+    padding: 32px;
+}
+
+/* Style pour le menu dans la barre de navigation */
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour chaque élément de menu dans la barre de navigation */
+.menuItem {
+    font-size: 0.875rem;
+    color: #F6F6F5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+
+/* Style pour le bouton "Réserver" dans la barre de navigation */
+.menu button {
+    border: 2px solid #F6F6F5;
+    padding: 6px 16px;
+    background-color: transparent;
+}
+
+/* Style pour l'animation des barres du bouton hamburger lorsque le menu est ouvert */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+    background-color: black;
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+    background-color: black;
+}
+
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+}
+
+
+
+h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #49737C;
+
+}
+
+.slide_wrapper{
+    padding-left: 200px;
+    margin: 5rem 0;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+.restaurant-image{
+    background-image: url(img/resto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+
+}
+
+.hotel-image{
+    background-image: url(img/hotel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    background-position: bottom;
+
+}
+
+.balade-image{
+    background-image: url(img/fôret.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+
+.text{
+    margin: 2rem;
+}
+
+.title{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 600;
+    color: #49737C;
+}
+
+.line{
+    width: 64px;
+    height: 0px;
+    border: 1px solid #49737C;
+    display: block;
+    
+}
+
+.infos{
+    font-family: 'PT Serif';
+    font-weight: 400;
+    color: #181510;
+}
+
+.discover{
+    color: #F6F6F5;
+    background-color: #49737C;
+    border: 2px solid #49737C;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.25rem;
+
+}
+
+
+footer{
+    background-color: #181510;
+    padding: 6em ;
+    margin: 0;
+    color: white;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.footer-icon li{
+    list-style: none;
+    padding-right: 32px;
+}
+
+.footer-section-right{
+    text-align: right;
+}
+
+.footer-section-right p{
+    font-size: 0.75rem;
+}
+
+.footer-menu{
+    padding: 0;
+}
+
+.footer-menu li{
+    list-style: none;
+    
+}
+
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media only screen and (min-width: 744px){
+
+.restaurant{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    height: 34.5rem;
+    padding: 0 10%;
+    margin: 10% 0px;
+}
+
+.restaurant-content{
+    background-color: #F6F6F5D9;
+    opacity: 0.85;
+    height: 100%;
+    grid-column: 1/8;
+    grid-row: 1/2;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-image{
+    height: 100%;
+    grid-column: 1/13;
+    grid-row: 1/2;
+    margin-right: -10vw;
+    margin-left: -10vw;
+
+}
+
+
+
+.hotel{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    height: 44.063rem;
+    padding: 0 10%;
+    margin: 10% 0px;
+}
+
+
+.hotel-content{
+    height: 27rem;
+    grid-column: 6/13;
+    grid-row: 1/2;
+    margin: auto 0;
+    background-color: #F6F6F5D9;
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+}
+
+.hotel-image{
+    height: 100%;
+    grid-column: 1/8;
+    grid-row: 1/2;
+    margin-left: -10vw;
+
+}
+
+.balade{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    height: 44.063rem;
+    padding: 0 10%;
+    margin: 10% 0px;
+}
+
+.balade-content{
+    background-color: #F6F6F5D9;
+    opacity: 0.85;
+    height: 29.375rem;
+    grid-column: 1/8;
+    grid-row: 1/2;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.balade-image{
+    height: 100%;
+    grid-column: 6/13;
+    grid-row: 1/2;
+    margin-right: -10vw;
+
+}
+}
+
+
+@media only screen and (min-width: 1172px){
+
+.text{
+    margin: 4rem;
+}
+
+.title{
+    font-size: 2rem;
+    line-height: 120%;
+}
+
+.infos{
+    font-size: 1rem;
+}
+
+.discover{
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+}
+
+
+/* Style pour la version mobile du site avec un écran maximum de 744px */
+@media only screen and (max-width: 744px) {
+
+    /* Style pour la barre de navigation lorsque le menu est ouvert */
+    .navbar{
+        justify-content: flex-start;
+    }
+
+    /* Style pour le menu déroulant lorsqu'il est ouvert */
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0s;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: #F6F6F5;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuItem {
+        margin: 1.25rem 2.5rem;
+        font-size: 1rem;
+        color: #F6F6F5;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .menuItem:hover {
+        transition: transform 0.15s;
+        transform: scale(1.2);
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        padding: 32px;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #F6F6F5;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .slide_wrapper{
+        margin: 5rem 0;
+        padding: 10px;
+    }
+
+    .img_box{
+        width: 2rem;
+        height: 100%;
+    }
+
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section-right{
+        text-align: left;
+    }
+    
+
+}
