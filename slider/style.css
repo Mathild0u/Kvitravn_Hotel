@@ -1,0 +1,18 @@
+.splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+
+.splide__arrows{
+    
+}
+
+.splide__arrow{
+    background: transparent;
+    color: red;
+    top: 0%;
+}
+
+.splide__arrow svg{
+    fill: red;
+}
